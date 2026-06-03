@@ -1,0 +1,29 @@
+{
+  "name": "team-task-management-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack task management portal with Node.js, React, and PostgreSQL.",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run dev --workspace client\"",
+    "server": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "client": "npm run dev --workspace client",
+    "build": "npm run build --workspace client",
+    "lint": "npm run lint --workspace client"
+  },
+  "workspaces": [
+    "client"
+  ],
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "pg": "^8.11.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}

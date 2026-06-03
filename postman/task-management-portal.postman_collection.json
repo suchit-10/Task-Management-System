@@ -1,0 +1,104 @@
+{
+  "info": {
+    "name": "Team Task Management Portal",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000/api"
+    },
+    {
+      "key": "taskId",
+      "value": "1"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/health"
+      }
+    },
+    {
+      "name": "List Tasks",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/tasks?page=1&limit=10&search=&status=&priority="
+      }
+    },
+    {
+      "name": "Get Task By Id",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/tasks/{{taskId}}"
+      }
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Create onboarding checklist\",\n  \"description\": \"Document the first-week tasks for a new teammate.\",\n  \"status\": \"Pending\",\n  \"priority\": \"Medium\",\n  \"due_date\": \"2026-06-10\"\n}"
+        },
+        "url": "{{baseUrl}}/tasks"
+      }
+    },
+    {
+      "name": "Update Task",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Create onboarding checklist\",\n  \"description\": \"Document the first-week tasks for a new teammate.\",\n  \"status\": \"In Progress\",\n  \"priority\": \"High\",\n  \"due_date\": \"2026-06-12\"\n}"
+        },
+        "url": "{{baseUrl}}/tasks/{{taskId}}"
+      }
+    },
+    {
+      "name": "Delete Task",
+      "request": {
+        "method": "DELETE",
+        "url": "{{baseUrl}}/tasks/{{taskId}}"
+      }
+    },
+    {
+      "name": "Task Stats",
+      "request": {
+        "method": "GET",
+        "url": "{{baseUrl}}/tasks/stats"
+      }
+    },
+    {
+      "name": "Bulk Delete Tasks",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"ids\": [1, 2]\n}"
+        },
+        "url": "{{baseUrl}}/tasks/bulk"
+      }
+    }
+  ]
+}
