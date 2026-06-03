@@ -110,8 +110,8 @@ Backend: `http://localhost:5000/api`
 
 ## Postman Collection
 
-Import [postman/task-management-portal.postman_collection.json](postman/task-management-portal.postman_collection.json) into Postman and keep `baseUrl` as `http://localhost:5000/api`.
-
+Import [postman/task-management-portal.postman_collection.json](postman/task-management-portal.postman_collection.json)
+into Postman and keep `baseUrl` as `http://localhost:5000/api`.
 
 Run the frontend at `http://localhost:3000` and capture:
 
