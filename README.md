@@ -13,6 +13,14 @@ Full-stack task management portal built with Node.js, Express, React, and Postgr
 - Completed-task visual indicator
 - Bonus: dashboard stats, bulk delete, CSV export, dark mode, and `Ctrl+N` new-task shortcut
 
+## ScreenShots
+<img width="1362" height="681" alt="Screenshot 2026-06-03 174425" src="https://github.com/user-attachments/assets/86130be5-7089-4d22-8717-52398629baf0" />
+<img width="1262" height="625" alt="Screenshot 2026-06-03 174436" src="https://github.com/user-attachments/assets/4b52acf7-ca3d-4d52-aa84-19bea74f23ac" />
+<img width="1248" height="629" alt="Screenshot 2026-06-03 174451" src="https://github.com/user-attachments/assets/4911d166-72a6-47e4-aa56-b9f3aff99edf" />
+<img width="1339" height="628" alt="Screenshot 2026-06-03 174503" src="https://github.com/user-attachments/assets/689946d9-2d3f-4022-bddc-50fa5850465a" />
+<img width="1122" height="147" alt="Screenshot 2026-06-03 174522" src="https://github.com/user-attachments/assets/111e0e11-02bc-4dfa-909e-df5e9120b9c8" />
+
+
 ## Project Structure
 
 ```text
@@ -104,7 +112,6 @@ Backend: `http://localhost:5000/api`
 
 Import [postman/task-management-portal.postman_collection.json](postman/task-management-portal.postman_collection.json) into Postman and keep `baseUrl` as `http://localhost:5000/api`.
 
-## Screenshots
 
 Run the frontend at `http://localhost:3000` and capture:
 
@@ -112,7 +119,3 @@ Run the frontend at `http://localhost:3000` and capture:
 - Create task drawer
 - Edit task drawer
 - Dark mode view
-
-## Notes
-
-The current workspace was empty when this project was scaffolded, so screenshots are not checked in yet. They can be added after running the application locally.
