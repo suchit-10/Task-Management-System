@@ -100,6 +100,18 @@ Backend: `http://localhost:5000/api`
 }
 ```
 
+## Database Schema
+
+Database schema is available at:
+
+database/schema.sql
+
+The script creates:
+- tasks table
+- constraints
+- indexes
+- sample seed data
+
 ## Validation Rules
 
 - Title is required and must be 3 to 150 characters
