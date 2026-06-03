@@ -23,6 +23,8 @@ Full-stack task management portal built with Node.js, Express, React, and Postgr
 └── postman/             API collection
 ```
 
+See [ARCHITECTURE.md](ARCHITECTURE.md) for a simple project flow diagram.
+
 ## Prerequisites
 
 - Node.js 18+
